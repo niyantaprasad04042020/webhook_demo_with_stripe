@@ -1,0 +1,5 @@
+var stripe = Stripe("<%= Rails.application.credentials[:stripe][:public]%>");
+
+  stripe.redirectToCheckout({
+    sessionId: "cs_test_a1kAl4M0AphKB9ha3cc3BlknwtG3qz0Pgw1Q0OsCxCEh24InGjdGwAEEtV"
+    }).then(result)
